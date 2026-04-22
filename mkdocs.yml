@@ -1,0 +1,44 @@
+site_name: 赛博笔记
+site_description: 中文网络安全与科技信息归档
+site_url: https://bytecapsule.github.io/sino-cyber-notes-site/
+repo_url: https://github.com/bytecapsule/sino-cyber-notes-site
+repo_name: bytecapsule/sino-cyber-notes-site
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bytecapsule
