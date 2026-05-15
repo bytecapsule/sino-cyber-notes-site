@@ -29,7 +29,7 @@ jobs:
           key: pip-mkdocs-${{ runner.os }}
 
       - name: Install dependencies
-        run: pip install mkdocs-material
+        run: pip install "mkdocs-material>=9,<10"
 
       - name: Deploy to GitHub Pages
         run: |
