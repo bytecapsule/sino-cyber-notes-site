@@ -33,10 +33,13 @@ jobs:
           key: pip-mkdocs-${{ runner.os }}
 
       - name: Install dependencies
-        run: pip install "mkdocs-material>=9,<10"
+        run: pip install "mkdocs-material>=9,<10" "mkdocs>=1.5,<2"
+
+      - name: Build docs
+        run: mkdocs build --verbose
 
       - name: Deploy to GitHub Pages
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          mkdocs gh-deploy --force
+          mkdocs gh-deploy --force --verbose
