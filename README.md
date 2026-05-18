@@ -1,20 +1,11 @@
-# sino-cyber-notes-site
+# 时光之赛博札记
 
-赛博笔记文档站 — 基于 [sino-cyber-notes](https://github.com/bytecapsule/sino-cyber-notes) 原始 TXT 数据，转换为 Markdown 后通过 MkDocs + GitHub Pages 发布。
+![首页](./docs/images/homepage.png)
 
-## 架构
+这里收录了历年在中文互联网上阅读过的文章——涵盖网络安全、科技、社会与文化等话题。
 
-- **数据源：** `bytecapsule/sino-cyber-notes`（原始 TXT 文件）
-- **本站：** Markdown 格式归档 + MkDocs Material 主题
-- **发布：** GitHub Pages（`gh-pages` 分支，Actions 自动构建）
+许多原文已在互联网上消失。这个项目的初衷，是把曾经读过、觉得有价值的内容归档保存，让它们不因链接失效或平台下线而彻底遗失。
 
-## 本地开发
+这些文章记录了互联网发展的轨迹，也折射出不同时期的社会与技术变迁。我们希望通过开放归档，让更多人能够访问和学习这些内容。
 
-```bash
-pip install mkdocs-material
-mkdocs serve
-```
-
-## 部署
-
-Push 到 `main` 分支后，GitHub Actions 自动构建并发布到 GitHub Pages。
+📖 **在线阅读：** https://bytecapsule.github.io/sino-cyber-notes-site/
