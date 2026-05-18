@@ -25,13 +25,9 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
-    - search.highlight
-    - search.suggest
     - content.code.copy
 
-plugins:
-  - search:
-      lang: zh
+plugins: []
 
 markdown_extensions:
   - pymdownx.superfences
